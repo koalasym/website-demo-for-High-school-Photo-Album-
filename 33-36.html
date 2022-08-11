@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Morris Chart Styles-->
+        <link href="assets/css/custom-styles.css" rel="stylesheet" />
+        <!-- Google Fonts-->
+        <title>杭高情</title>
+        
+        </head>
+        
+        <body>
+            <div>
+                <div id="sideNav" href=""><i class="material-icons dp48">大丰报</i></div>
+                <nav class="navbar-default navbar-side" role="navigation">
+                    <div class="sidebar-collapse">
+                        <ul class="nav" id="main-menu">
+        
+                            <li>
+                                <a class=" waves-effect waves-dark" href="1-4.html"><i class="fa fa-dashboard"></i> Page 1 to 4</a>
+                            </li>
+                            <li>
+                                <a href="5-8.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> Page 5 to 8</a>
+                            </li>
+                            <li>
+                                <a href="9-12.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> Page 9 to 12</a>
+                            </li>
+                            <li>
+                                <a href="13-16.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Page 13 to 16</a>
+                            </li>
+                            
+                            <li>
+                                <a href="17-20.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Page 17 to 20</a>
+                            </li>
+                            <li>
+                                <a href="21-24.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Page 21 to 24 </a>
+                            </li>
+                            <li>
+                                <a href="25-28.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Page 25 to 28 </a>
+                            </li> <li>
+                                <a href="29-32.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Page 29 to 32 </a>
+                            </li> <li>
+                                <a href="33-36.html" class="active-menu waves-effect waves-dark"><i class="fa fa-edit"></i> Page 33 to 36 </a>
+                            </li> <li>
+                                <a href="37-40.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Page 37 to 40 </a>
+                            </li>
+        
+                        
+                           
+                        </ul>
+        
+                    </div>
+        
+                </nav>
+            </div>
+            <!--实现左端悬浮框链接是否出现-->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/easypiechart.js"></script>
+        <script src="js/custom-scripts.js"></script> 
+    
+<!-- banner -->
+<div class="banner">
+    <tr><td>
+    <marquee behavior="alternate">
+        <img src="images/HG/1587209726878.jpeg" width="500" height="350" border="0" />
+        <img src="images/HG/1587211084330.jpeg" width="500" height="350" border="0" />
+        <img src="images/HG/1587209433933.jpeg" width="500" height="350" border="0" />
+        <img src="images/classmates/0100.jpg" width="500" height="350" border="0" />
+        <img src="images/classmates/0102.jpg" width="500" height="350" border="0" />
+     	<img src="images/classmates/002.png" width="500" height="350" />
+        <img src="images/classmates/0101.jpeg" width="500" height="350" border="0" />
+        <img src="images/HG/1587211079051.jpeg" width="500" height="350" border="0" />
+        <img src="images/HG/1587209354507.jpeg" width="500" height="350" border="0" />
+        <img src="images/people/1111.jpg" width="500" height="350" border="0" />
+        <img src="images/HG/1587209361505.jpeg" width="500" height="350" border="0" />
+    </marquee></td></tr>
+</div>
+<!-- content -->
+<div class="content content1">
+	<div class="content_nav"id="menu" class="color1"]>
+        <a href="index.html"  >五班</a>
+        <a href="sportsmeeting.html">人民运动会</a>
+        <a href="playing.html" >玩耍的人民</a>
+        <a href="pictures.html"class="now_nav"id="nowmenu" >人民连环画</a>
+        <a href="author.html" >人民作者</a>
+    </div>
+    <div class="content_mh1">
+        <div id="wrap">
+            <button>顺序</button>
+            <button>循环</button>
+            <div id="box">
+            <img src="images/people/33.jpg" alt="">
+            <p class="title1">1/4</p>
+            <p class="title2">大丰报</p>
+            <button class="leftBut"><</button>
+            <button class="rightBut">></button>
+            <!-- 焦点列表 -->
+            <div class="focus-list">
+            <span style="background-color: orange;"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+            </div>
+    </div>
+    <div class="content_foot">
+    	<p>欢迎来到五班合作社 </p>
+    </div>
+</div>
+</body>
+<script>
+    var imgArr = ['images/people/33.jpg','images/people/34.jpg','images/people/35.jpg','images/people/36.jpg'];
+    var oWrap = document.getElementById('wrap');
+    var btn1 = oWrap.getElementsByTagName('button')[0];
+    var btn2 = oWrap.getElementsByTagName('button')[1];
+    var oPic = oWrap.getElementsByTagName('img')[0];
+    var title1 = oWrap.getElementsByTagName('p')[0];
+    var title2 = oWrap.getElementsByTagName('p')[1];
+    var leftBtn = oWrap.getElementsByTagName('button')[2];
+    var rightBtn = oWrap.getElementsByTagName('button')[3];
+    var focusList = oWrap.getElementsByClassName('focus-list')[0];
+    var spans = focusList.getElementsByTagName('span');//[span,span,span,span]
+    //点击右箭头,切换下一张
+    var step = 0; // step表示要显示的图片的索引值
+    var flag = 0; // flag用来标记循环还是顺序, 0表示顺序 , 1表示循环
+    rightBtn.onclick = function(){
+    //点击一次右箭头,step+1
+    step++;
+    if(step === 4){
+    // if(flag === 0){
+    // step = 3;
+    // }else{
+    // step = 0;
+    // }
+    flag == 0 ? step = 3 : step = 0;
+    }
+    // 取出数组中对应的图片路径,设置给图片的src属性
+    oPic.src = imgArr[step];
+    // 把title1里面的数字同步切换
+    title1.innerHTML = (step+1) + '/4';
+    // 把title2里面的数字同步切换
+    title2.innerHTML = '大丰报' + (step+1);
+    focusFllow();
+    }
+    leftBtn.onclick = function(){
+    //点击一次左箭头,step-1
+    step--;
+    if(step === -1){
+    flag === 0 ? step = 0 : step = 3;
+    }
+    // 取出数组中对应的图片路径,设置给图片的src属性
+    oPic.src = imgArr[step];
+    // 把title1里面的数字同步切换
+    title1.innerHTML = (step+1) + '/4';
+    // 把title2里面的数字同步切换
+    title2.innerHTML = '大丰报' + (step+1);
+    focusFllow();
+    }
+    //点击顺序按钮,flag赋值为0
+    btn1.onclick = function(){
+    flag = 0;
+    }
+    //点击循环按钮,flag赋值为1
+    btn2.onclick = function(){
+    flag = 1;
+    }
+    // 焦点跟随
+    function focusFllow(){
+    for(var i = 0; i < spans.length; i++){
+    spans[i].style.backgroundColor = "#fff";
+    }
+    spans[step].style.backgroundColor = 'orange';
+    }
+    </script>
+</html>
